@@ -31,7 +31,7 @@ db_version, db_total = struct.unpack('>hh', fh.read(4))
 print "db version:  %d" % db_version
 print "total:       %d" % db_total
 print 
-print '{0:22s}  {1:6s}  {2:6s}  {3:10s}  {4:9s}  {5:s}'.format('key','accuracy','conf.','latitude','longitude','time')
+print '%25s %6s %6s %11s %11s %5s' % ('key','accuracy','conf.','latitude','longitude','time')
 
 i = 0
 while i < db_total:
@@ -39,7 +39,7 @@ while i < db_total:
     (accuracy, confidence, latitude, longitude, readtime) = struct.unpack('>iiddQ', fh.read(32))
     
     #print key,accuracy,confidence,latitude,longitude,time.strftime("%x %X %z", time.localtime(readtime/1000))
-    print '{0:25s}  {1:5d}  {2:5d}  {3:10f}  {4:10f}  {5:s}'.format(key,accuracy,confidence,latitude,longitude,time.strftime("%x %X %z", time.localtime(readtime/1000)))
+    print '%25s  %7d  %5d  %10f  %10f  %s' % (key,accuracy,confidence,latitude,longitude,time.strftime("%x %X %z", time.localtime(readtime/1000)))
     i=i+1
 
 fh.close()
