@@ -11,6 +11,8 @@ parse.py <cache file>
 
 Important note: looking at old android source (this code is no longer open from Google it seems) it seems to be limited heavily.
 
+However, data is only pruned when new info is added. There is no time based pruning unless there is new data being added to the cache. This could lead to old data being in there is there is limited movement of the device.
+
     // Maximum time (in millis) that a record is valid for, before it needs
     // to be refreshed from the server.
     private static final long MAX_CELL_REFRESH_RECORD_AGE = 12 * 60 * 60 * 1000; // 12 hours
