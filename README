@@ -1,0 +1,11 @@
+Following the latest days internet outrage/overreaction to the revelation that iPhone has a cache for its location service, I decided to have look what my Android devices caches for the same function.
+
+This is a quick dumper I threw together to parse the files from the Android location provider.
+
+The files are named cache.cell & cache.wifi and is located in /data/data/com.google.android.location/files on the Android device.
+
+You will need root access to the device to read this directory.
+
+Usage:
+parse.py <cache file>
+  
