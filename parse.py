@@ -22,7 +22,7 @@
 # cell: mcc + ":" + mnc + ":" + lac + ":" + cid
 # wifi: mac address of AP
 
-import sys, struct
+import sys, struct, time
 from datetime import datetime
 
 gpx = False
