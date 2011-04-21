@@ -1,11 +1,11 @@
 Following the latest days internet outrage/overreaction to the
-revelation that iPhone has a cache for its location service, I decided
+revelation that [iPhone has a cache] for its location service, I decided
 to have look what my Android devices caches for the same function.
 
 This is a quick dumper I threw together to parse the files from the
 Android location provider.
 
-The files are named cache.cell & cache.wifi and is located in
+The files are named `cache.cell` & `cache.wifi` and is located in
 `/data/data/com.google.android.location/files` on the Android device.
 
 You will need root access to the device to read this directory.
@@ -13,7 +13,15 @@ You will need root access to the device to read this directory.
 Usage:
 
 ```console
-parse.py <cache file>
+$ parse.py <cache file>
+```
+
+You can also pass the `--gpx` option to get ouptut in [GPX
+format], then use [gpsbabel] or something to get the data into the
+format of your choice:
+
+```console
+$ parse.py --gpx cache.wifi > wifi.gpx
 ```
 
 Important note: looking at old android source (this code is no longer
@@ -67,7 +75,11 @@ key                     accuracy  conf.   latitude    longitude  time
 ```
 
 If you have any questions/info that you'd like to share, I can be
-reached via @packetlss on Twitter or packetlss+android@gmail.com
+reached via [@packetlss] on Twitter or packetlss+android@gmail.com
 
 
   
+[iPhone has a cache]: http://radar.oreilly.com/2011/04/apple-location-tracking.html
+[GPX format]: http://www.topografix.com/gpx.asp
+[gpsbabel]: http://www.gpsbabel.org/
+[@packetlss]: http://twitter.com/packetlss
