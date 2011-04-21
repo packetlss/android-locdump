@@ -9,6 +9,17 @@ You will need root access to the device to read this directory.
 Usage:
 parse.py <cache file>
 
+Important note: looking at old android source (this code is no longer open from Google it seems) it seems to be limited heavily.
+
+    // Maximum time (in millis) that a record is valid for, before it needs
+    // to be refreshed from the server.
+    private static final long MAX_CELL_REFRESH_RECORD_AGE = 12 * 60 * 60 * 1000; // 12 hours
+    private static final long MAX_WIFI_REFRESH_RECORD_AGE = 48 * 60 * 60 * 1000; // 48 hours
+
+    // Cache sizes
+    private static final int MAX_CELL_RECORDS = 50;
+    private static final int MAX_WIFI_RECORDS = 200;
+
 
 
 Example output:
