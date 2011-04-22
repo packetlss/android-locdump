@@ -84,9 +84,12 @@ key                     accuracy  conf.   latitude    longitude  time
 If you have any questions/info that you'd like to share, I can be
 reached via [@packetlss] on Twitter or packetlss+android@gmail.com
 
+[Contributors]
+
 
   
 [iPhone has a cache]: http://radar.oreilly.com/2011/04/apple-location-tracking.html
 [GPX format]: http://www.topografix.com/gpx.asp
 [gpsbabel]: http://www.gpsbabel.org/
 [@packetlss]: http://twitter.com/packetlss
+[Contributors]: https://github.com/packetlss/android-locdump/contributors
