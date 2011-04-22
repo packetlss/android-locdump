@@ -10,6 +10,13 @@ The files are named `cache.cell` & `cache.wifi` and is located in
 
 You will need root access to the device to read this directory.
 
+How to disable:
+Find `Settings -> Location & Security -> Use wireless networks` and uncheck it.
+
+This removes the files on 2.3 devices, my 2.2 device keeps the files but stops updating them.
+Other versions are unknown at this moment.
+
+
 Usage:
 
 ```console
