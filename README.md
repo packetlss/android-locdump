@@ -82,7 +82,7 @@ key                     accuracy  conf.   latitude    longitude  time
 ```
 
 If you have any questions/info that you'd like to share, I can be
-reached via [@packetlss] on Twitter or packetlss+android@gmail.com
+reached at packetlss+android@gmail.com
 
 [Contributors]
 
